@@ -8,10 +8,6 @@ class testRequest:
   def __init__(self):
     self.text = 'Thinking'
 
-def login(token):
-  global token
-  token = ''
-
 class ChatBot:
   #getAnswer: wait for answer and return it
   def __init__(self, id, name, language):
