@@ -31,5 +31,5 @@ class ChatBot:
     self.thinking = False
     return x
     #reset: reset the chatbot
-    def reset(self):
-      requests.patch('https://api.daniton999.ml/chatbot', json = {'token': token, 'id': self.id, 'language': self.language, 'name': self.name})
+  def reset(self):
+    requests.patch('https://api.daniton999.ml/chatbot', json = {'token': token, 'id': self.id, 'language': self.language, 'name': self.name})
