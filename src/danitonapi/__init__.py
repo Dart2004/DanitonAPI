@@ -1,10 +1,13 @@
-import requests
-import time
+"""
+  Defining all functions
+"""
 
+#testRequest: wait for request
 class testRequest:
   def __init__(self):
     self.text = 'Thinking'
 
+#getAnswer: wait for answer and return it
 def getAnswer(token, message, userid, username):
   try:
     x = testRequest()
