@@ -1,4 +1,5 @@
 import requests
+import time
 
 token = ''
 
@@ -30,6 +31,7 @@ class ChatBot:
     except Exception as es:
       print(es)
       x = ''
+    self.thinking = False
     return x
     #reset: reset the chatbot
     def reset(self):
