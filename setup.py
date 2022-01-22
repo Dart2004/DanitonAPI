@@ -20,7 +20,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
+    package_dir={"master": "src/danitonapi"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
 )
