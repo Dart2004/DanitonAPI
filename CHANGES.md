@@ -9,7 +9,10 @@ ChatBot
 ### Use
 `` pip install danitonapi ``
 
-``import danitonapi``
+```
+from danitonapi import api
+api.token = <TOKEN>
+```
 
 #### ChatBot
 ``getAnswer(token, message, userid, username)``
