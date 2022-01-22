@@ -15,4 +15,6 @@ api.token = <TOKEN>
 ```
 
 #### ChatBot
-``getAnswer(token, message, userid, username)``
+```cb = api.ChatBot(id, username, language)
+cb.getAnswer(message)
+cb.reset()```
