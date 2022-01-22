@@ -9,6 +9,7 @@ class testRequest:
     self.text = 'Thinking'
 
 def login(token):
+  global token
   token = ''
 
 class ChatBot:
