@@ -3,8 +3,8 @@ import setuptools
 long_description = open('README.md').read()
 
 setuptools.setup(
-    name="danitonapi-daniton999",
-    version="0.0.3",
+    name="danitonapi",
+    version="0.0.4",
     author="Daniton999",
     author_email="zombieservers123@gmail.com",
     description="A global Artificial Intelligence Network called Daniton",
@@ -20,7 +20,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(exclude=['danitonapi']),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
 )
  
