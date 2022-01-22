@@ -4,7 +4,7 @@ long_description = open('README.md').read()
 
 setuptools.setup(
     name="danitonapi-daniton999",
-    version="0.0.1",
+    version="0.0.2",
     author="Daniton999",
     author_email="zombieservers123@gmail.com",
     description="A global Artificial Intelligence Network called Daniton",
