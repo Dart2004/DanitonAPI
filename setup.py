@@ -1,7 +1,6 @@
 import setuptools
 
-with open("CHANGES.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+long_description = open('README.md').read()
 
 setuptools.setup(
     name="danitonapi-daniton999",
