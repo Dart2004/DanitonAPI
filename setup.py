@@ -1,21 +1,26 @@
-"""
-  Defining all functions
-"""
+import setuptools
 
-#testRequest: wait for request
-class testRequest:
-  def __init__(self):
-    self.text = 'Thinking'
+with open("CHANGES.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
 
-#getAnswer: wait for answer and return it
-def getAnswer(token, message, userid, username):
-  try:
-    x = testRequest()
-    while x.text == 'Thinking':
-      x = requests.get('https://api.daniton999.ml/chatbot', json = {'token': token, 'id': userid, 'language': 'de', 'name': username, 'message': message}, stream = True)
-      time.sleep(3)
-    x = x.json()['message']
-  except Exception as es:
-    print(es)
-    x = '_ _'
-  return x
+setuptools.setup(
+    name="dantionapi-dart2.0",
+    version="0.0.1",
+    author="Daniton999",
+    author_email="zombieservers123@gmail.com",
+    description="A global Artificial Intelligence Network called Daniton",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/Dart2004/DanitonAPI",
+    project_urls={
+        "Bug Tracker": "https://github.com/Dart2004/DanitonAPI/issues",
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
+)
