@@ -1,3 +1,6 @@
+import requests
+import time
+
 class testRequest:
   def __init__(self):
     self.text = 'Thinking'
