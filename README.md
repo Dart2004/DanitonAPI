@@ -24,6 +24,6 @@ cb.reset()
 #### Async
 ```python
 cb = api.ChatBot(id, username, language)
-cb.getAsyncAnswer(message)
+await cb.getAsyncAnswer(message)
 cb.reset()
 ```
