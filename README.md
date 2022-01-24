@@ -15,6 +15,15 @@ api.token = <TOKEN>
 ```
 
 #### ChatBot
-```cb = api.ChatBot(id, username, language)
+#### Normal
+```python
+cb = api.ChatBot(id, username, language)
 cb.getAnswer(message)
-cb.reset()```
+cb.reset()
+```
+#### Async
+```python
+cb = api.ChatBot(id, username, language)
+cb.getAsyncAnswer(message)
+cb.reset()
+```
